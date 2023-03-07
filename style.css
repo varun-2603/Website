@@ -1,0 +1,73 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Georgia", Serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+.pimg1 {
+  background-image: url();
+  min-height: 100%;
+}
+.pimg2 { 
+  background-image: url(https://raw.githubusercontent.com/Bullz-Racing-BMSCE/Website/main/pics/1.jpg);
+  min-height: 400px;
+  backdrop-filter: blur(10px);
+}
+.pimg3 {
+  background-image: url(https://raw.githubusercontent.com/Bullz-Racing-BMSCE/Website/main/pics/IMG_4642.JPG);
+  min-height: 400px;
+}
+.pimg1,
+.pimg2,
+.pimg3 {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 20px 40px;
+}
+
+.ptext {
+  position: absolute;
+  justify-content: center;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  color:rgb(0, 0, 0);
+  font-size: 60px;
+  letter-spacing: 2px;
+}
+.textBg {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-style: solid;
+  border-width:medium;
+  border-color:rgb(0, 0, 0);
+  font-family: 'Lucida Sans Unicode';
+  text-align: center;
+  line-height: 1;
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+  max-width: 50%;
+  max-height: 50%;
+  padding: 10px 20px;
+  
+}
+
+.section {
+  padding: 50px 80px;
+  text-align: center;
+}
+.section-light {
+  background-color: #0c0c0c;
+  color: #000000;
+}
+.section-dark {
+  background-color: #282e34;
+  color: #fdfafa;
+  font-family: 'Courier New';
+}
