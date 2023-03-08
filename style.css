@@ -2,24 +2,37 @@ html,
 body {
   height: 100%;
   margin: 0;
-  font-size: 16px;
+  font-size: 19px;
   font-family: "Georgia", Serif;
   font-weight: 400;
   line-height: 1.8em;
-  color: #666;
+  color: #dd3a3a;
 }
 .pimg1 {
   background-image: url();
-  min-height: 100%;
+  min-height: 82%;
 }
 .pimg2 { 
-  background-image: url(https://raw.githubusercontent.com/Bullz-Racing-BMSCE/Website/main/pics/1.jpg);
-  min-height: 400px;
-  backdrop-filter: blur(10px);
+  /* background-image: url(https://raw.githubusercontent.com/Bullz-Racing-BMSCE/Website/main/pics/1.jpg); */
+  background-image: url(https://raw.githubusercontent.com/Bullz-Racing-BMSCE/Website/main/pics/IMG_5969.JPG);
+  min-height: 500px;
+  
+  /* backdrop-filter: blur(10px); */
+  
+}
+.psec{
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 20px 40px;
 }
 .pimg3 {
   background-image: url(https://raw.githubusercontent.com/Bullz-Racing-BMSCE/Website/main/pics/IMG_4642.JPG);
-  min-height: 400px;
+  min-height: 300px;
+   filter: blur(2px);
+  -webkit-filter: blur(2px); 
 }
 .pimg1,
 .pimg2,
@@ -47,13 +60,14 @@ body {
   border-style: solid;
   border-width:medium;
   border-color:rgb(0, 0, 0);
-  font-family: 'Lucida Sans Unicode';
+  font-family: 'Tilt Warp' cursive;
   text-align: center;
   line-height: 1;
   -webkit-backdrop-filter: blur(1px);
   backdrop-filter: blur(1px);
   max-width: 50%;
   max-height: 50%;
+  
   padding: 10px 20px;
   
 }
@@ -71,3 +85,120 @@ body {
   color: #fdfafa;
   font-family: 'Courier New';
 }
+.section2{
+   /* background-color:rgba(247, 52, 52, 0.3);  */
+   background-image: url(https://raw.githubusercontent.com/Bullz-Racing-BMSCE/Website/main/pics/red.png); 
+   background-position: right;
+  background-position: right;
+  /* border-style: solid;
+  border-width:medium;
+  border-color:rgb(0, 0, 0); */
+  text-align: center;
+  line-height: 1;
+  /* -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px); */
+  max-width: 50%;
+  max-height: 100%;
+  padding: 40px 20px;
+  position:absolute;
+  top:0%;
+  width:30%;
+  bottom: 0%;
+  align-self:right;
+  line-height:1;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.textBg2{
+  color:#000000;
+  font-family:'Courier New';
+  line-height: 1;
+  text-decoration:double;
+  font-weight: bolder;
+  font-size: medium;
+}
+.textBg3{
+  color:white;
+  font-family:'Times New Roman', Times, serif;
+  font-size:50px;
+  font-weight: bolder;
+}
+/* .textBg4{
+  /* background-color: rgba(255, 255, 255, 0.3); */
+  /* border-style: solid;
+  border-width:medium;
+  border-color:rgb(255, 249, 249);
+  font-family: 'Tilt Warp' cursive;
+  text-align: center;
+  line-height: 1;
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+  max-width: 20%;
+  max-height: 50%;
+  padding: 10px 0px;
+  top:50%;
+  color:aliceblue;
+} */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 100%;
+  width: 30%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  align-self:center;
+}
+#navbar{
+  background-color:#282e34;
+  background-image: url(https://raw.githubusercontent.com/Bullz-Racing-BMSCE/Website/main/pics/logo.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 10px;
+  /* margin-left: 2%; */
+  margin-bottom: 2%;
+  border-style: solid;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-color: #000000;
+  border-width: 10px;
+}
+#navbar ul{
+  padding:0;
+  list-style: none;
+}
+#navbar li{
+  display:inline-block;
+}
+#navbar a{   
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding-right :15px;
+  font-size: 25px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+#navbar a:hover{
+  color: rgb(237, 44, 44);
+  background-color: transparent;
+}
+
+
+
+/* img {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  display:inline;
+}
+
+img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+} */
+
