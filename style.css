@@ -205,13 +205,14 @@ ABOUT US */
   text-decoration: none;
   padding-right :15px;
   font-size: 25px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-weight: bold;
+  font-family:verdana;
+  /* font-weight: bold; */
 }
 #navbar a:hover{
   color: rgb(237, 44, 44);
   background-color: transparent;
 }
+
 
 
 

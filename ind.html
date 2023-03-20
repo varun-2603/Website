@@ -7,21 +7,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sty.css">
 
-    <title>BULLZ RACING| Login</title>
+    <title>BULLZ RACING|Login</title>
+
+
+    <script>
+        function validateEmail(emailId) {
+          var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+          if (emailId.value.match(mailformat)) {
+            document.form1.text1.focus();
+            return true;
+          }
+          else {
+            alert("Invalid email address.");
+            document.form1.text1.focus();
+            return false;
+          }
+        }</script>
 
 </head>
 
+<!-- NAVIGATION BAR -->
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#"></a></li><li><a href="#"></a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#"></a></li><li><a href="#"></a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#"></a></li><li><a href="#"></a></li>
+            <li><a href="index.html#pimg4">Contact</a></li>
+            <li><a href="#"></a></li><li><a href="#"></a></li>
+            <li><a href="">Login</a></li>
+        </ul>
+    </nav>
+
+
+
+
 <body>
     <div class="box">
+        <form action="/action_page.php" name="form1">
         <div class="container">
-
+            
             <div class="top">
                 <span>Have an account?</span>
                 <header>Login</header>
             </div>
 
             <div class="input-field">
-                <input type="text" name="Email" class="input" placeholder="Email Id" >
+                <input type="text" name="Email" class="input" placeholder="Email Id" required>
                 <span id="message"></span>
                 <i class='bx bx bx-user'></i>
             </div>
@@ -32,7 +70,7 @@
             </div>
 
             <div class="input-field">
-                <input type="submit" class="submit" value="Login" id="">
+                <input type="submit" class="submit" value="Login" id="" onclick="validateEmail(document.form1.Email)">
             </div>
 
             <div class="two-col">
@@ -42,7 +80,7 @@
                 </div>
                 <div class="two">
                     <label><a href="#">Forgot password?</a></label>
-                </div>
+                </div></div>
             </div>
         </div>
     </div>
