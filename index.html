@@ -1,6 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+                           <!-- scrolling effect -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+
+
+
+
+
+                         <!-- NAVIGATION BAR -->
+
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,6 +49,7 @@
   <nav id="navbar">
     
     <div class="container">
+    
       <style>ul{text-align: center;}</style>
         <ul>
             <li><a href="#">Home</a></li>
@@ -21,21 +61,23 @@
             <li><a href="#"></a></li><li><a href="#"></a></li>
             <li><a href="#">Partners</a></li>
             <li><a href="#"></a></li><li><a href="#"></a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#pimg4">Contact</a></li>
 
         </ul>
     </div>
 </nav>
+
+
+
+                              <!-- MAIN BODY -->
   <body>
     <section class="pimg1">
     </section>
+
+
+                                 <!-- ABOUT SECTION -->
     <section class="pimg2">
-      <!-- <div class="ptext"> -->
-        <!-- <span class="textBg"> ABOUT US</span>
-      </div>
-    </section> -->
-     <!-- <section class="section-dark"> -->
-      <div class="section2">
+      <div class="section2" id="section2">
         <span class="textBg3">
           ABOUT</span>
           <span class="textBg2">
@@ -48,8 +90,8 @@ We are a team of young, hungry and eager students from various disciplines of en
   Know more..</p></span></div>
  </section> 
 
-
-
+                    
+                                <!-- OUR PARTNER -->
 
     <section class="section section-dark">
       <span class="textBg3">Our Partners</span>
@@ -119,15 +161,11 @@ We are a team of young, hungry and eager students from various disciplines of en
         <img src="https://raw.githubusercontent.com/Bullz-Racing-BMSCE/Website/main/pics/ipg_final-removebg-preview.png" alt="Magod" width="70" height="70">
       </div>
     </div>
-
-     
-    
-
-    </section>
+</section>
     
 
 
-
+                            <!-- MEET THE TEAM -->
 
 
     <section class="section section-light">
@@ -141,7 +179,11 @@ We are a team of young, hungry and eager students from various disciplines of en
       <!-- </div> -->
       
     </section>
-    <section class="pimg4">
+
+ 
+
+                              <!--CONTACT US SECTION-->   
+    <section class="main" id="pimg4">
      <div class="back4"></div>
      <div></div>
       <div>
@@ -154,7 +196,7 @@ We are a team of young, hungry and eager students from various disciplines of en
 
 
   
-    
+                      <!--CONTACT FORM-->
     
     <h3>Contact Form</h3>
     
@@ -185,17 +227,6 @@ We are a team of young, hungry and eager students from various disciplines of en
     <p1>BMS College of Engineering<br></p1>
   <p1>Bull Temple Road<br></p1>
 <p1>Bengaluru</p1></div>
-    
-    <!-- <style>h5{
-        color:black;font-size: 50px;position: relative; text-align: center;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      }</style> -->
-      <!-- <img2 src="https://raw.githubusercontent.com/Bullz-Racing-BMSCE/Website/main/pics/Contact_US-removebg-preview.png"></img2></div>
-       <div class="ptext"> -->
-        <!-- <style>iframe{
-          position: absolute;
-        }</style>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d278.6383880519288!2d77.56533124837307!3d12.941054094338844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae158b031a5129%3A0x92121a20a9394655!2sBullz%20Racing%20BMSCE!5e0!3m2!1sen!2sin!4v1678295432948!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      -->
     </section>
     <section class="section sec"></section>
   </body>
