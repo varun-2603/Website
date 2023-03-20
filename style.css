@@ -18,7 +18,7 @@ min-height:200px;
 
 }
 .pimg1 {
-  background-image: url();
+  background-image: url(https://raw.githubusercontent.com/Bullz-Racing-BMSCE/Website/main/pics/2.png);
   min-height: 22%;
 }
 .pimg2 { 
@@ -43,10 +43,10 @@ min-height:200px;
    filter: blur(2px);
   -webkit-filter: blur(2px); 
 }
-/* .pimg4 {
-  background-image: url(https://raw.githubusercontent.com/Bullz-Racing-BMSCE/Website/main/pics/Contact_US-removebg-preview.png);
-  min-height:100px;
-} */
+.pimg4 {
+  background-image: url();
+  min-height:22%;
+}
 .pimg1,
 .pimg2,
 .pimg3,.pigm4 {
