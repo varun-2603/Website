@@ -8,7 +8,7 @@ body{
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-image: url("carpic.jpg");
+    background-image: url("https://raw.githubusercontent.com/Bullz-Racing-BMSCE/Website/main/pics/carpic.jpg");
 }
 .box{
     display: flex;

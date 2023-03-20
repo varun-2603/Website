@@ -47,8 +47,6 @@ min-height:200px;
 .pimg3 {
   background-image: url(https://raw.githubusercontent.com/Bullz-Racing-BMSCE/Website/main/pics/IMG_4642.JPG);
   min-height: 400px;
-   filter: blur(2px);
-  -webkit-filter: blur(2px); 
 }
 .pimg4 {
   background-image: url();
@@ -167,13 +165,14 @@ ABOUT US */
   font-weight: bold;
   border: 3px solid #f1f1f1;
   position: absolute;
-  top: 100%;
-  width: 30%;
+  top: 50%;
   transform: translate(-50%, -50%);
   width: 80%;
   padding: 20px;
   text-align: center;
   align-self:center;
+  bottom:50%;
+  height: 20%;
 }
 #navbar{
   background-color:#282e34;
