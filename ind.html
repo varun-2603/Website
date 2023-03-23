@@ -11,38 +11,24 @@
 
 
     <script>
-        // function validateEmail(emailId) {
-        //   var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-        //   if (emailId.value.match(mailformat)) {
-        //     document.form1.text1.focus();
-        //     return true;
-        //   }
-        //   else {
-        //     alert("Invalid email address.");
-        //     document.form1.text1.focus();
-        //     window.location.herf="ind.html";
-        //     return false;
-        //   }
-        // }
-
-        function auth()
-        {
-            var emaillll = document.getElementById("mail").value;
-            // var paswordddd = document.getElementById("passworddd").value;
-            if(emaillll == "sreeja.is21@bmsce.ac.in" || emaillll =="uditi.ec21@bmsce.ac.in")
-            {
-                window.location.assign("login.html");
-                alert("Login Successful!");
-                return;
-            }
-            else
-            {
-                alert("Invalid email address!");
-                return;
-            }
-        }
-        </script>
-
+        function validateEmail(emailId) {
+          var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+          if (emailId.value.match(mailformat)) {
+            Window.location.href = "ab.html";
+            // Location.href = "ab.html";
+            // location = "ab.html";
+            document.form1.text1.focus();
+            return true;
+          }
+          else {
+            alert("Invalid email address.");
+            Window.location.href = "ind.html";
+            Location.href = "ind.html";
+            location = "ind.html";
+            return false;
+          }
+        }</script>
+ 
 </head>
 
 <!-- NAVIGATION BAR -->
@@ -54,9 +40,9 @@
             <li><a href="#"></a></li>
             <li><a href="#">About</a></li>
             <li><a href="#"></a></li><li><a href="#"></a></li>
-            <li><a href="#">Team</a></li>
+            <li><a href="coming.html">Team</a></li>
             <li><a href="#"></a></li><li><a href="#"></a></li>
-            <li><a href="#">Partners</a></li>
+            <li><a href="coming.html">Partners</a></li>
             <li><a href="#"></a></li><li><a href="#"></a></li>
             <li><a href="index.html#pimg4">Contact</a></li>
             <li><a href="#"></a></li><li><a href="#"></a></li>
@@ -69,7 +55,7 @@
 
 <body>
     <div class="box">
-        <form action="" name="form1">
+        <form name="form1" action="ab.html">
         <div class="container">
             
             <div class="top">
