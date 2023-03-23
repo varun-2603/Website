@@ -31,6 +31,27 @@ $(document).ready(function(){
   });
 });
 </script>
+
+<!-- form validation -->
+
+<script>
+  function validateEmail(Email) {
+    var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    if (Email.value.match(mailformat)) {
+      // Window.location.href = "ind.html";
+      // Location.href = "ind.html";
+      // location = "ind.html";
+      return true;
+    }
+    else {
+      alert("Invalid email address.");
+      // Window.location.href = "#pimg4";
+      // Location.href = "#pimg4";
+      // location = "#pimg4";
+      return false;
+    }
+  }</script>
+
 <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -195,20 +216,20 @@ We are a team of young, hungry and eager students from various disciplines of en
     <h3>Contact Form</h3>
     
     <div class="container2">
-      <form action="/action_page.php">
+      <form name="form1">
         <label for="name"></label>
-        <input type="text" id="fname" name="firstname" placeholder="Name" style="width:50%">
+        <input type="text" id="fname" name="firstname" placeholder="Name" style="width:50%" required>
     
-        <label for="email"></label>
-        <input type="text" id="lname" name="lastname" placeholder="Email"style="width:50%">
-    
-        <label for="subject"></label>
-        <input type="text" id="lname" name="lastname" placeholder="Subject" style="width:50%">
+        <label for="Email"></label>
+        <input type="text" id="lname" name="Email" placeholder="Email"style="width:50%" required>
     
         <label for="subject"></label>
-        <textarea id="subject" name="subject" placeholder="Message" style="height:200px"></textarea>
+        <input type="text" id="lname" name="Subject" placeholder="Subject" style="width:50%" required>
+    
+        <label for="Message"></label>
+        <textarea id="subject" name="Message" placeholder="Message" style="height:200px" required></textarea>
         <div>
-        <input type="submit" value="Submit"></div>
+        <input type="submit" value="Submit" onclick="validateEmail(document.form1.Email)"></div>
       </form>
       
     </div> 
