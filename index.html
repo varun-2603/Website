@@ -38,9 +38,7 @@ $(document).ready(function(){
   function validateEmail(Email) {
     var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
     if (Email.value.match(mailformat)) {
-      // Window.location.href = "ind.html";
-      // Location.href = "ind.html";
-      // location = "ind.html";
+      window.location.assign("feedback.html");
       return true;
     }
     else {
@@ -216,7 +214,7 @@ We are a team of young, hungry and eager students from various disciplines of en
     <h3>Contact Form</h3>
     
     <div class="container2">
-      <form name="form1">
+      <form name="form1" action="">
         <label for="name"></label>
         <input type="text" id="fname" name="firstname" placeholder="Name" style="width:50%" required>
     
@@ -229,7 +227,7 @@ We are a team of young, hungry and eager students from various disciplines of en
         <label for="Message"></label>
         <textarea id="subject" name="Message" placeholder="Message" style="height:200px" required></textarea>
         <div>
-        <input type="submit" value="Submit" onclick="validateEmail(document.form1.Email)"></div>
+        <input type="submit" value="Submit" onclick="auth()"></div>
       </form>
       
     </div> 
