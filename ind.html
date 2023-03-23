@@ -11,24 +11,38 @@
 
 
     <script>
-        function validateEmail(emailId) {
-          var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-          if (emailId.value.match(mailformat)) {
-            Window.location.href = "ab.html";
-            // Location.href = "ab.html";
-            // location = "ab.html";
-            document.form1.text1.focus();
-            return true;
-          }
-          else {
-            alert("Invalid email address.");
-            Window.location.href = "ind.html";
-            Location.href = "ind.html";
-            location = "ind.html";
-            return false;
-          }
-        }</script>
- 
+        // function validateEmail(emailId) {
+        //   var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+        //   if (emailId.value.match(mailformat)) {
+        //     document.form1.text1.focus();
+        //     return true;
+        //   }
+        //   else {
+        //     alert("Invalid email address.");
+        //     document.form1.text1.focus();
+        //     window.location.herf="ind.html";
+        //     return false;
+        //   }
+        // }
+
+        function auth()
+        {
+            var emaillll = document.getElementById("mail").value;
+            // var paswordddd = document.getElementById("passworddd").value;
+            if(emaillll == "sreeja.is21@bmsce.ac.in" || emaillll =="uditi.ec21@bmsce.ac.in")
+            {
+                window.location.assign("login.html");
+                alert("Login Successful!");
+                return;
+            }
+            else
+            {
+                alert("Invalid email address!");
+                return;
+            }
+        }
+        </script>
+
 </head>
 
 <!-- NAVIGATION BAR -->
@@ -38,7 +52,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="#"></a></li>
             <li><a href="#"></a></li>
-            <li><a href="ab.html">Our Cars</a></li>
+            <li><a href="#">About</a></li>
             <li><a href="#"></a></li><li><a href="#"></a></li>
             <li><a href="#">Team</a></li>
             <li><a href="#"></a></li><li><a href="#"></a></li>
@@ -55,7 +69,7 @@
 
 <body>
     <div class="box">
-        <form name="form1" action="ab.html">
+        <form action="" name="form1">
         <div class="container">
             
             <div class="top">
@@ -64,18 +78,18 @@
             </div>
 
             <div class="input-field">
-                <input type="text" name="Email" class="input" placeholder="Email Id">
+                <input type="text" name="Email" id="mail" class="input" placeholder="Email Id" required>
                 <span id="message"></span>
                 <i class='bx bx bx-user'></i>
             </div>
 
             <div class="input-field">
-                <input type="Password" class="input" placeholder="Password" id="" required>
+                <input type="Password" class="input" id="passworddd" placeholder="Password" id="">
                 <i class='bx bx-lock-alt'></i>
             </div>
 
             <div class="input-field">
-                <input type="submit" class="submit" value="Login" id="" onclick="validateEmail(document.form1.Email)">
+                <input type="submit" class="submit" value="Login" id="" onclick="auth()">
             </div>
 
             <div class="two-col">
