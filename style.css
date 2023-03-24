@@ -176,9 +176,9 @@ ABOUT US */
 }
 #navbar{
   background-color:#282e34;
-  background-image: url(https://raw.githubusercontent.com/Bullz-Racing-BMSCE/Website/main/pics/logo.png);
-  background-position: left top;
-  background-repeat: no-repeat;
+  background-image: url(https://raw.githubusercontent.com/Bullz-Racing-BMSCE/Website/main/pics/logo.png),url(https://raw.githubusercontent.com/Bullz-Racing-BMSCE/Website/main/pics/bms-removebg-preview.png);
+  background-position: left top,right top;
+  background-repeat: no-repeat,no-repeat;
   background-size: contain;
   padding: 10px;
   /* margin-left: 2%; */
