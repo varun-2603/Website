@@ -14,65 +14,77 @@
     <script>
         function vali() {
             var name =
-                document.getElementById("Name");
-            var email =
-                document.getElementById("EMail");
-            var phone =
-                document.getElementById("Phn");
-           
-            var password =
-                document.getElementById("passworddd");
+        document.forms.form1.Name.value;
+    var email =
+        document.forms.form1.EMail.value;
+    var phone =
+        document.forms.form1.Telephone.value;
+    
+    var password =
+        document.forms.form1.Password.value;
+   
             var cpassword=
-                document.getElementById("C_pass")
-           
+            document.forms.form1.CPassword.value;
+          
             var regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g; 
             var regPhone=/^\d{10}$/;                                        
             var regName = /\d+$/g;                                    
         
-            if (name.value == "" || regName.value.test(name)) {
-                window.alert("Please enter your name properly.");
-                name.focus();
+            // if (name.value == "") {
+            //     window.alert("Please enter your name properly.");
+            //     name.focus();
+            //     return false;
+            // }
+        
+            if (phone== "" || !regPhone.test(phone)) {
+                alert("Please enter valid phone number.");
+                phone.focus();
                 return false;
             }
-        
             
-            
-            if (email.value == "" || !regEmail.value.test(email)) {
+            else if (email== "" || !regEmail.test(email)) {
                 window.alert("Please enter a valid e-mail address.");
                 email.focus();
                 return false;
             }
+
+           
              
-            if (password.value == "") {
+            else if (password == "") {
                 alert("Please enter your password");
                 password.focus();
                 return false;
             }
         
-            if(password.value.length <6){
-                alert("Password should be atleast 6 character long");
+            else if(password.length <8){
+                alert("Password should be atleast 8 character long");
                 password.focus();
                 return false;
         
             }
-            if (phone.value == "" || !regPhone.value.test(phone)) {
-                alert("Please enter valid phone number.");
-                phone.focus();
-                return false;
-            }
+            
 
-            if (cpassword.value == "") {
+            else if (cpassword== "") {
                 alert("Please enter your password again");
                 cpassword.focus();
                 return false;
             }
 
-            if(password.value!=cpassword.value)
+            else if(password!=cpassword)
             {
                 alert("The passwords do not match");
                 return false;
             }
-            var xyz = vali();
+            else
+            {
+                window.location.assign("login.html");
+                alert("Submitted Successfully!");
+                
+                auth1();
+            return true;
+            }
+        var xyz = vali();
+        
 
 function auth1()
 {
@@ -84,8 +96,6 @@ function auth1()
     window.location.assign("login.html");
   }
 }
-        
-            return true;
         }
     </script>
 
@@ -143,24 +153,24 @@ function auth1()
             </div>
 
             <div class="input-field">
-                <input type="text" name="Phone Number" id="Phn" class="input" placeholder="Mobile No." required>
+                <input type="text" name="Telephone" id="Phn" class="input" placeholder="Mobile No." required>
                 <span id="message"></span>
                 <i class='bx bx bx-user'></i>
             </div>
 
             <div class="input-field">
-                <input type="text" name="Email" id="EMail" class="input" placeholder="Email Id" required>
+                <input type="text" name="EMail" id="EMail" class="input" placeholder="Email Id" required>
                 <span id="message"></span>
                 <i class='bx bx bx-user'></i>
             </div>
             <div class="input-field">
-                <input type="Password" class="input" id="passworddd"  placeholder="Password" required>
+                <input type="Password" name="Password" class="input" id="passworddd"  placeholder="Password" required>
                 <span id="message"></span>
                 <i class='bx bx bx-user'></i>
             </div>
 
             <div class="input-field">
-                <input type="Password" class="input" id="C_pass" placeholder="Confirm Password" required>
+                <input type="Password" name="CPassword" class="input" id="C_pass" placeholder="Confirm Password" required>
                 <i class='bx bx bx-user'></i>
             </div>
 
