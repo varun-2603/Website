@@ -244,7 +244,7 @@ img:hover {
     }
     
     input[type=submit] {
-      background-color: #04AA6D;
+      background-color: black;
       color: white;
       padding: 10px 20px;
       border: none;
@@ -253,12 +253,12 @@ img:hover {
     }
     
     input[type=submit]:hover {
-      background-color: #45a049;
+      background-color: red;
     }
     
     .container2 {
       border-radius: 5px;
-      background-color: #f2f2f2;
+      background-color: #D0D3D4;
       padding: 20px;
       size: 50px;
       background-image: url(https://raw.githubusercontent.com/Bullz-Racing-BMSCE/Website/main/pics/logo.png);
