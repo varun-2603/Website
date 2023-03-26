@@ -11,35 +11,53 @@
 
 
     <script>
-        // function validateEmail(emailId) {
-        //   var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-        //   if (emailId.value.match(mailformat)) {
-        //     document.form1.text1.focus();
-        //     return true;
-        //   }
-        //   else {
-        //     alert("Invalid email address.");
-        //     document.form1.text1.focus();
-        //     window.location.herf="ind.html";
-        //     return false;
-        //   }
-        // }
 
-        function auth()
+        function validateEmail(EMAIL)
         {
-            var emaillll = document.getElementById("mail").value;
-            // var paswordddd = document.getElementById("passworddd").value;
-            if(emaillll == "sreeja.is21@bmsce.ac.in" || emaillll =="uditi.ec21@bmsce.ac.in")
-            {
-                window.location.assign("login.html");
-                alert("Login Successful!");
-                return;
-            }
-            else
-            {
-                alert("Invalid email address!");
-                return;
-            }
+            // var emaillll = document.getElementById("mail").value;
+            // // var paswordddd = document.getElementById("passworddd").value;
+            // if(emaillll == "sreeja.is21@bmsce.ac.in" || emaillll =="uditi.ec21@bmsce.ac.in")
+            // {
+            //     window.location.assign("login.html");
+            //     alert("Login Successful!");
+            //     return;
+            // }
+            // else
+            // {
+            //     alert("Invalid email address!");
+            //     return;
+            // }
+
+            var my_in=document.getElementById("passworddd");
+            var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+            if (EMAIL.value.match(mailformat) && my_in.value.length>=8) {
+                 document.form1.EMAIL.focus();
+                 window.location.assign("login.html");
+                 alert("Submitted Successfully!");
+                 auth1();
+                 return true;
+               }
+            else {
+                 if(my_in.value.length<8)
+                 alert("Password must contain atleast 8 characters");
+                 else
+                 alert("Invalid email address.");
+                 document.form1.EMAIL.focus();
+                 return false;
+ }
+ var xyz = validateEmail(EMAIL);
+
+    function auth1()
+    {
+      // alert("hey!");
+      // var emaill = document.getElementById("EMAIL").value;
+      if(xyz == true)
+      {
+        alert("Submitted Successfully!");
+        window.location.assign("login.html");
+      }
+    }
+      
         }
         </script>
 
@@ -78,7 +96,7 @@
             </div>
 
             <div class="input-field">
-                <input type="text" name="Email" id="mail" class="input" placeholder="Email Id">
+                <input type="text" name="Email" id="EMAIL" class="input" placeholder="Email Id" required>
                 <span id="message"></span>
                 <i class='bx bx bx-user'></i>
             </div>
@@ -89,7 +107,7 @@
             </div>
 
             <div class="input-field">
-                <input type="submit" class="submit" value="Login" id="" onclick="auth()">
+                <input type="submit" class="submit" value="Login" id="" onclick="validateEmail(document.form1.EMAIL)">
             </div>
 
             <div class="two-col">
@@ -100,6 +118,10 @@
                 <div class="two">
                     <label><a href="#">Forgot password?</a></label>
                 </div></div>
+                <div class="a">
+                    <span>Don't have an account? SIGN UP</span>
+                    
+                </div>
             </div>
         </div>
     </div>
