@@ -9,6 +9,7 @@ body {
   line-height: 1.8em;
   color: #dd3a3a;
   scroll-behavior: smooth;
+  
 }
 
 
@@ -20,12 +21,14 @@ body {
 background-position: top;
 min-height:200px;
 
+
 }
 
 /* SECTION1 */
 .pimg1 {
-  background-image: url(https://github.com/Bullz-Racing-BMSCE/Website/blob/main/pics/looooogo.jpg?raw=true);
-  min-height: 22%;
+  /* background-image: url(https://github.com/Bullz-Racing-BMSCE/Website/blob/main/pics/looooogo.jpg?raw=true); */
+  min-height: 20%;
+  background-color:white;
 }
 
 /*ABOUT US BG*/
@@ -192,6 +195,7 @@ ABOUT US */
   transition: 0.4s;
   position: scroll;
   scroll-behavior: smooth;
+  
 }
 #navbar ul{
   padding:0;
