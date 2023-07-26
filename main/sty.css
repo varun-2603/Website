@@ -8,7 +8,8 @@ body{
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-image: url("https://raw.githubusercontent.com/Bullz-Racing-BMSCE/Website/main/pics/carpic.jpg");
+    background-image: url("pics/car.jpg");
+    
 }
 .box{
     display: flex;
@@ -18,13 +19,17 @@ body{
 }
 .container{
     width: 350px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     padding: 0 15px 0 15px;
     padding-top: 110px;
+    background-color: #ffffff7e;
+    border: solid;
+
 }
 span{
-    color: #fff;
+    color: #141414;
     font-feature-settings:"abvm";
     font-size: larger;
     display: flex;
@@ -32,7 +37,7 @@ span{
     padding: 10px 0 10px 0;
 }
 header{
-    color: #fff;
+    color: #0e0e0e;
     font-size: 30px;
     display: flex;
     justify-content: center;
@@ -44,20 +49,20 @@ header{
     width: 87%;
     border: none;
     border-radius: 30px;
-    color: #fff;
+    color: #0e0e0e;
     font-size: 15px;
     padding: 0 0 0 45px;
-    background: rgba(255,255,255,0.1);
+    background: #eb5e5e;
     outline: none;
 }
 i{
     position: relative;
     top: -33px;
     left: 17px;
-    color: #fff;
+    color: #0d0d0d;
 }
 ::-webkit-input-placeholder{
-    color: #fff;
+    color: #0e0d0d;
 }
 .submit{
     border: none;
@@ -67,7 +72,7 @@ i{
     outline: none;
     width: 100%;
     color: black;
-    background: rgba(255,255,255,0.7);
+    background: rgba(228, 113, 113, 0.7);
     cursor: pointer;
     transition: .3s ;
 }
@@ -78,7 +83,7 @@ i{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    color: #fff;
+    color: #bb4040;
     font-size: small;
     margin-top: 10px;
 }
@@ -135,3 +140,5 @@ label a{
     color:#fff;
     font-size: small;
 }
+
+

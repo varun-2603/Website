@@ -9,7 +9,7 @@
 
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("NINAAD/Untitled-1.png");
+
     overflow: hidden;
     background-color: rgb(0, 0, 0);
     background-size: cover;
@@ -33,7 +33,6 @@ header {
     position: sticky;
     top: 0;
     background-size: cover;
-    background-image:url("../NINAAD/Untitled-1.png" )
 }
 
 
@@ -125,7 +124,7 @@ body {
     position: relative;
     width: 100%;
     height: 400px;
-    background-color: rgba(24, 83, 122, 0.6);
+    background-color: rgba(236, 160, 166, 0.464);
     opacity: 0;
     transition: height linear 0.4s, opacity linear 0.2s;
 }
@@ -146,7 +145,7 @@ body {
 
 .title,
 .price {
-    color: #18537a;
+    color: #7a1818;
     font-size: 1.5em;
     font-weight: bold;
     letter-spacing: 1px;
@@ -161,7 +160,7 @@ body {
 .separator {
     width: 20%;
     height: 6px;
-    background-color: #17537a;
+    background-color: #7a1717;
     margin-bottom: 16px;
 }
 
@@ -179,13 +178,13 @@ body {
 }
 
 .info i {
-    color: #18537a;
+    color: #7a1818;
     font-size: 1.1em;
     margin-right: 4px;
 }
 
 .info span {
-    color: #18537a;
+    color: #7a1818;
     font-weight: bolder;
     text-decoration: underline;
 }
