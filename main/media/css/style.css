@@ -24,6 +24,10 @@
 	font-style: normal;
 }
 
+
+
+
+
 /*
 	Parallelism 1.0 by HTML5 UP
 	html5up.net | @n33co
@@ -54,6 +58,8 @@
 		font-weight: 200;
 		text-transform: lowercase;
 	}
+
+
 	
 		body:after
 		{
@@ -519,7 +525,7 @@
 	#header
 	{
 		position: relative;
-		background: #d64760;
+		background: #141414;
 		color: #fff;
 	}
 	
