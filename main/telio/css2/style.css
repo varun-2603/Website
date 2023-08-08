@@ -220,8 +220,9 @@
 
 /*** feedback ***/
 .booking {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../pics/c3.png) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../../pics/telioev_WHITE.png) center center no-repeat;
     background-size: cover;
+    height:100px;
 }
 
 .bootstrap-datetimepicker-widget.bottom {
