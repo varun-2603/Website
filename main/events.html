@@ -31,28 +31,6 @@
     <header>
 
 
-
-         <!-- Topbar Start -->
-    <div class="container-fluid bg-light p-0">
-        <div class="row gx-0 d-none d-lg-flex">
-            <div class="col-lg-7 px-5 text-start">
-                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
-                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
-                    <small>BMS College of Engineering</small>
-                </div>
-            </div>
-            <div class="col-lg-5 px-5 text-end">
-                
-                <div class="h-100 d-inline-flex align-items-center">
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href="https://www.facebook.com/bullzracing.bmsce/"><i class="fab fa-facebook-f"></i></a>
-                    <!-- <a class="btn btn-sm-square bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a> -->
-                    <a class="btn btn-sm-square bg-white text-primary me-1" href="https://in.linkedin.com/company/bullzracing-bmsce"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-0" href="https://www.instagram.com/bullzracing_bmsce/?hl=en"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
        
 
             <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
@@ -65,7 +43,15 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto p-4 p-lg-0">
                         <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="ab.html" class="nav-item nav-link">Our Cars</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                              Achivements
+                            </a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="achivements/BZR02/index.html">BZR02</a>
+                              <a class="dropdown-item" href="ab.html">Our Cars</a>
+                            </div>
+                          </li>
                         <a href="sponsor/index.html" class="nav-item nav-link">Sponsors</a>
                         <a href="events.html" class="nav-item nav-link active">Events</a>
                         <a href="media/index.html" class="nav-item nav-link">Media</a>
@@ -181,6 +167,8 @@
                 </div>
             </div>
     </header>
+
+    <script src="jsss/main.js"></script> 
 </body>
 
 </html>
