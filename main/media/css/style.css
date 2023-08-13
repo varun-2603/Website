@@ -92,7 +92,7 @@
 	ul.contact
 	{
 		cursor: pointer;
-		margin: 0 0 1em 0;
+		margin: 0 0 0 0;
 	}
 	
 		ul.contact li
@@ -146,19 +146,14 @@
 		.thumb img
 		{
 			display: block;
-			z-index: 1;
+			/* z-index: 1; */
 		}
 
 /*********************************************************************************/
 /* Icons                                                                         */
 /*********************************************************************************/
 
-	/*
-		Powered by:
-		
-		Font Awesome (http://fortawesome.github.com/Font-Awesome/)
-		Font Awesome More (http://gregoryloucas.github.com/Font-Awesome-More/)
-	*/
+	
 
 	.icon
 	{
@@ -343,7 +338,7 @@
 		.icon-check-empty:before { content: "\f096"; }
 		.icon-bookmark-empty:before { content: "\f097"; }
 		.icon-phone-sign:before { content: "\f098"; }
-		.icon-twitter:before { content: "\f099"; padding-left: 2px; }
+		.icon-twitter:before { content: "\f099"; padding-left: 10px; }
 		.icon-facebook:before { content: "\f09a"; padding-left: 6px; }
 		.icon-github:before { content: "\f09b"; }
 		.icon-unlock:before { content: "\f09c"; }
@@ -535,7 +530,7 @@
 			position: absolute;
 			left: 0;
 			top: 0;
-			width: 100%;
+			width: 200%;
 			height: 100%;
 			background: url('images/overlay.png');
 		}
