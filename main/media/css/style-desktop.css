@@ -154,7 +154,7 @@
 	{
 		background: #1a1f2c;
 		background: rgba(18,21,29,0.9);
-		box-shadow: 0px 0px 0px 20px #fff, 0px 10px 60px 10px rgba(8,11,19,0.55);
+		box-shadow: 0px 0px 0px 20px #fff, 0px 0px 0px 0px rgba(8,11,19,0.55);
 	}
 	
 		.poptrox-popup .loader
@@ -254,7 +254,7 @@
 			top: -70px;
 			right: -70px;
 			cursor: pointer;
-			border-radius: 40px;
+			border-radius: 4px;
 			box-shadow: 0px 0px 0px 1px #fff;
 		}
 		

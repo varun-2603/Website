@@ -99,7 +99,7 @@
 	{
 		background: #0a0f1c;
 		box-shadow: 0px 0px 30px 10px rgba(8,11,19,0.85);
-		border: solid 5px #fff;
+		border: transparent 5px;
 		-moz-box-sizing: content-box;		
 		-webkit-box-sizing: content-box;		
 		-o-box-sizing: content-box;		
