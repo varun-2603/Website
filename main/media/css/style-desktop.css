@@ -60,7 +60,7 @@
 	
 		#wrapper.overlayed
 		{
-			-webkit-filter: blur(3px);
+			-webkit-filter: blur(30px);
 		}
 
 /*********************************************************************************/
@@ -70,7 +70,7 @@
 	#main
 	{
 		width: 100%;
-		position: absolute;
+		position:absolute;
 	}
 
 /*********************************************************************************/
@@ -84,7 +84,7 @@
 
 		#reel .item
 		{
-			display: block;
+			display:block;
 			float: left;
 			position: relative;
 			overflow: hidden;
@@ -165,7 +165,7 @@
 			position: absolute;
 			top: 50%;
 			left: 50%;
-			margin: -24px 0 0 -24px;
+			margin: 0px 0 0 0px;
 			background: url('images/loader.gif');
 			opacity: 0.25;
 		}
@@ -261,4 +261,8 @@
 			.poptrox-popup .closer:before
 			{
 				content: "\00d7";
+			}
+
+			.thumb img:hover{
+				transform: scale(1.5);
 			}
