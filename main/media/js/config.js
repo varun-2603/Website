@@ -96,6 +96,7 @@ $(function() { h5u_parallelism.init({
 						padding:			3,			// Padding (in px) between items (0 = no padding)
 						paddingColor:		'white',		// Padding color
 						onmouseover:        'hover',
+						
 						resetScroll:		true,		// If true, reel scroll will reset on page refresh
 						scrollFactor:		1,			// Scales the scroll delta (1 = normal, 2 = double, 0.5 = half, etc.)
 						scrollKeyAmount:	50,			// Scroll amount when using keys
