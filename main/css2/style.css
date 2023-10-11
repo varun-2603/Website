@@ -1,7 +1,7 @@
 /********** Template CSS **********/
 :root {
-    --primary: #D81324;
-    --secondary: #0B2154;
+    --primary: #ff0000;
+    --secondary: #555555;
     --light: #F2F2F2;
     --dark: #111111;
 }
@@ -109,9 +109,9 @@
         padding: 10px 0;
     }
 
-    .navbar-light .navbar-nav {
+    /*.navbar-light .navbar-nav {
         border-top: 1px solid #EEEEEE;
-    }
+    }*/
 }
 
 .navbar-light .navbar-brand,
@@ -120,7 +120,7 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: var(--dark);
+    color: var(--light);
     font-weight: 500;
 }
 
@@ -148,6 +148,19 @@
     }
 }
 
+img.header{
+    width: 225px;
+    
+    align-content: center;
+}
+
+.navbar-nav{
+    justify-content: center;
+ }
+
+.navbar{
+    box-shadow: 0px 1px 10px rgba(255, 255, 255, .5)
+}
 
 /*** Header ***/
 .carousel-caption {
@@ -197,6 +210,8 @@
 .breadcrumb-item + .breadcrumb-item::before {
     color: var(--light);
 }
+
+#pics {height: 800px; overflow: hidden; width: 100%; }
 
 
 /*** Facts ***/
