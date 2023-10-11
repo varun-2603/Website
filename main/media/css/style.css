@@ -41,11 +41,11 @@
 	body
 	{
 		position: relative;
-		background: url('../images/bg.jpg');
+		background-color: black;
 		background-size: cover;
-		color: #999;
-		color: rgba(255, 252, 252, 0.6);
-		font-family: 'Source Sans Pro';
+		color: #ffffff;
+		color: rgb(255, 255, 255);
+		font-family: 'Montserrat';
 		font-weight: 200;
 		text-transform: lowercase;
 	}
@@ -517,7 +517,7 @@
 	#header
 	{
 		position: relative;
-		background: #141414;
+		background: #000000;
 		color: #fff;
 		
 	}
@@ -541,13 +541,13 @@
 	  #abc{
     width:100%;
     height:10vh;
-    background-image: url(../images/bg.jpg);
+    background-color: black;
     background-size: cover;
     }
   nav{
     width: 100%;
     height: 50px;
-    background-color: transparent;
+    background-color: black;
     line-height: 50px;
   }
   nav ul{
@@ -560,7 +560,7 @@
     transition: 0.7s all;
   }
   nav ul li:hover{
-    background-color:rgb(75,104,105);
+    background-color:rgb(253, 177, 0);
   }
   nav ul li a{
     text-decoration: none;

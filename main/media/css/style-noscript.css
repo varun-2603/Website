@@ -73,7 +73,7 @@
 			transition: 0.7s all;
 		  }
 		  nav ul li:hover{
-			background-color:#088;
+			color:ff0000;
 		  }
 		  nav ul li a{
 			text-decoration: none;
